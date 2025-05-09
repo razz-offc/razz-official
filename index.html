@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello I'Am Razz Official</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a1a;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #4fc3f7;
+            text-shadow: 0 0 10px rgba(79, 195, 247, 0.5);
+        }
+        
+        .section {
+            background-color: rgba(10, 10, 30, 0.8);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid #4fc3f7;
+            box-shadow: 0 0 15px rgba(79, 195, 247, 0.3);
+        }
+        
+        h2 {
+            color: #4fc3f7;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 1px solid #4fc3f7;
+            padding-bottom: 10px;
+        }
+        
+        .product-list {
+            list-style-type: none;
+        }
+        
+        .product-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: rgba(20, 20, 50, 0.6);
+            border-radius: 5px;
+            border-left: 3px solid #4fc3f7;
+            transition: all 0.3s ease;
+        }
+        
+        .product-item:hover {
+            background-color: rgba(30, 30, 70, 0.8);
+            transform: translateX(5px);
+        }
+        
+        .bonus-list {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        
+        .bonus-item {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .bonus-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #4fc3f7;
+        }
+        
+        .contact {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(10, 10, 30, 0.9);
+            margin-top: 40px;
+            border-radius: 10px;
+            border: 1px solid #4fc3f7;
+        }
+        
+        .contact h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4fc3f7;
+        }
+        
+        .whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .whatsapp:hover {
+            background-color: #128C7E;
+        }
+       @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+      <video id="myVideo" autoplay muted loop>
+  <source src="https://files.catbox.moe/s88o6p.mp4" type="video/mp4">
+</video>
+
+<script>
+document.body.addEventListener('click', function () {
+  const video = document.getElementById('myVideo');
+  video.muted = false;
+  video.play();
+});
+</script>
+</div>
+    
+    
+    <div class="container">
+        <header>
+            <h1>Hello!! I'Am Razz Official</h1>
+            <p>Welcome To My Product Website</p>
+            <p>Razz Official Menyediakan Berbagai Kebutuhan Hosting Seperti Vps, Panel Pterodactyl, Bot WhatsApp, Dll</p>
+        </header>
+        
+        <section class="section">
+            <h2>VPS Digital Ocean High Quality</h2>
+            <ul class="product-list">
+                <li class="product-item">Ram 2Gb Core 2 : Rp20.000</li>
+                <li class="product-item">Ram 4Gb Core 2 : Rp25.000</li>
+                <li class="product-item">Ram 8Gb Core 2 : Rp30.000</li>
+                <li class="product-item">Ram 8Gb Core 4 : Rp35.000</li>
+                <li class="product-item">Ram 16Gb Core 4 : Rp40.000</li>
+            </ul>
+            
+            <h3>Bonus Pembelian :</h3>
+            <ul class="bonus-list">
+                <li class="bonus-item">Free Install Panel Pterodactyl</li>
+                <li class="bonus-item">Free Request Domain Panel</li>
+                <li class="bonus-item">Free Install Node/Wings</li>
+                <li class="bonus-item">Free Pasang Egg Bot Wa</li>
+                <li class="bonus-item">Masa Aktif 1 Bulan (30 Day)</li>
+                <li class="bonus-item">Garansi On 20 Day (1x Replace)</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Panel Running Bot WhatsApp (Harga Spesial Promo)</h2>
+            <ul class="product-list">
+                <li class="product-item">Panel Unli Server Private 1 Bulan : Rp2.000</li>
+                <li class="product-item">Panel Unli Server Private Permanen : Rp6.000</li>
+                </ul>      
+                 </section>
+                 <section class="section">
+                     <h2>Bot Push Kontak / Bot Jaga Grup</h2>
+                     <ul class="product-list">
+                 <li class="product-item">1 Minggu = Rp2.000</li>
+                 <li class="product-item">2 Minggu = Rp4.000</li>
+                 <li class="product-item">1 Bulan = Rp5.000</li>
+                 <li class="product-item">Permanen = Rp7.000</li>
+                     </ul>
+                 </section>
+        <section class="section">
+                     <h2>Bot Push Kontak × Bot Jaga Grup</h2>
+                     <ul class="product-list">
+                 <li class="product-item">1 Minggu = Rp4.000</li>
+                 <li class="product-item">2 Minggu = Rp6.000</li>
+                 <li class="product-item">1 Bulan = Rp9.000</li>
+                 <li class="product-item">Permanen = Rp12.000</li>
+                     </ul>
+                 </section>
+        <section class="section">
+            <h2>Jasa/Layanan Lainnya</h2>
+            <ul class="product-list">
+                <li class="product-item">Jasa Rename Script : Rp5.000 - Rp15.000</li>
+                <li class="product-item">Jasa Install Panel Pterodactyl : Rp5.000</li>
+                <li class="product-item">Jasa Pembuatan Website Store / Payment : Rp15.000</li>
+              </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Open Jasa Pembuatan Website</h2>
+            <ul class="bonus-list">
+                <li class="bonus-item">Web Payment / Jualan</li>
+                <li class="bonus-item">Proses Pengerjaan 5-10 Menit</li>
+                <li class="bonus-item">Bebas Reques Nama Website</li>
+                <li class="bonus-item">Tinggal Terima Jadi Aja</li>
+                <li class="bonus-item">Harga/Price : Rp15.000</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Open Kebutuhan Panel Pterodactyl (Harga Spesial Promo)</h2>
+            <ul class="product-list">
+                <li class="product-item">Reseller Panel Private : Rp3.000</li>
+                <li class="product-item">Admin Panel Private : Rp7.000</li>
+                <li class="product-item">Partner Panel Private : Rp11.000</li>
+                <li class="product-item">Owner Panel Private : Rp15.000</li>
+            </ul>
+            
+            <h3>Bonus Pembelian :</h3>
+            <ul class="bonus-list">
+                <li class="bonus-item">Spesifikasi Ram 16gb Core 4</li>
+                <li class="bonus-item">Panel Anti Delay</li>
+                <li class="bonus-item">Server Panel Terjaga Ketat</li>
+                <li class="bonus-item">Terjamin Awet 100%</li>
+                <li class="bonus-item">Tidak Ada Patungan/PT PT</li>
+                <li class="bonus-item">Semuanya Permanen</li>
+                <li class="bonus-item">Server High Quality & Fresh</li>
+                <li class="bonus-item">Akses Ke 2 Server (Untuk Owner Panel)</li>
+            </ul>
+        </section>
+    
+        
+        <div class="contact">
+            <h3>Hubungi Penjual Jika Berminat</h3>
+            <p>Jika Anda Kurang Paham Bisa Tanyakan Saja</p>
+            <a href="https://wa.me/6281252823641" class="whatsapp">WhatsApp Razz Official</a>
+        </div>
+        
+       <div class="contact">
+            <h3>Channel Testimoni Razz Official</h3>
+            <a href="https://whatsapp.com/channel/0029Vb4l5V8Lo4ho5wmL8N3c" class="whatsapp">Channel Testimoni Razz Official</a>
+        </div>
+</body>
+</html>
